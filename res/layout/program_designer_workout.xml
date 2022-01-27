@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/workout_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/popup_rounded"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/session_title"
+        style="@style/EditText_active"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:text="Session 1"
+        android:textAlignment="center"
+        android:textSize="16pt"
+        app:layout_constraintEnd_toStartOf="@+id/delete_session_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/move_session_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/delete_session_button"
+        style="@style/button_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:padding="0dp"
+        android:text="X"
+        app:layout_constraintBottom_toBottomOf="@+id/session_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/session_title"
+        app:layout_constraintTop_toTopOf="@+id/session_title" />
+
+    <Button
+        android:id="@+id/move_session_button"
+        style="@style/button_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:clickable="false"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="2dp"
+        android:rotation="90"
+        android:text="|||"
+        app:layout_constraintBottom_toBottomOf="@+id/session_title"
+        app:layout_constraintEnd_toStartOf="@+id/session_title"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/session_title"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <TextView
+        android:id="@+id/exercise_header"
+        style="@style/TextView_h3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Exercise"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/sets_header"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/session_title" />
+
+    <TextView
+        android:id="@+id/sets_header"
+        style="@style/TextView_h3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sets"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/reps_header"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/exercise_header"
+        app:layout_constraintTop_toBottomOf="@id/session_title" />
+
+    <TextView
+        android:id="@+id/reps_header"
+        style="@style/TextView_h3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="30dp"
+        android:text="Reps"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/sets_header"
+        app:layout_constraintTop_toBottomOf="@id/session_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exercise_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/add_exercise_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exercise_header" />
+
+    <View
+        android:id="@+id/id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_exercise_button"
+        style="@style/button_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Add Exercise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

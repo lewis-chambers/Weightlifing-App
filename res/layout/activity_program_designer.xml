@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:hint="Program Title"
+            android:id="@+id/program_title_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="text"
+            android:id="@+id/program_title"
+            android:textSize="16pt"
+            android:textColor="@color/colorPrimaryDark"
+            android:singleLine="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/session_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/program_title_layout"
+            app:layout_constraintBottom_toTopOf="@id/add_session_button"/>
+
+        <Button
+            style="@style/button_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:id="@+id/add_session_button"
+            android:text="Add Session"
+            android:layout_margin="0dp"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/session_recycler_view"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            style="@style/button_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/submit_program_button"
+            android:text="Submit Program"
+            app:layout_constraintStart_toEndOf="@id/add_session_button"
+            app:layout_constraintTop_toBottomOf="@id/session_recycler_view"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

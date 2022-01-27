@@ -1,0 +1,61 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/color5</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/color1</item>
+    </style>
+    <style name="button_text" >
+        <item name="android:layout_width" >wrap_content</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >@color/color1</item>
+        <item name="android:gravity" >center</item>
+
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >#000000</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+    <style name="EditText_active" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/color1</item>
+        <item name="android:textColorHint">@color/color5</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="colorAccent">@color/color1</item>
+        <item name="android:backgroundTint">@color/color1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView_h1" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/color1</item>
+        <item name="android:textSize">16pt</item>
+    </style>
+    <style name="TextView_h2" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/color1</item>
+        <item name="android:textSize">14pt</item>
+    </style>
+    <style name="TextView_h3" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/color1</item>
+        <item name="android:textSize">8pt</item>
+    </style>
+    <style name="TextView_h4" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/color1</item>
+        <item name="android:textSize">6pt</item>
+    </style>
+
+    <style name="EditTextInputAppearance" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/color1</item>
+    </style>
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <!-- reference our hint & error styles -->
+        <item name="android:textColor">@color/color1</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/color1</item>
+        <item name="colorControlActivated">@color/color1</item>
+        <item name="colorControlHighlight">@color/color1</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="colorAccent">@color/color1</item>
+    </style>
+</resources>

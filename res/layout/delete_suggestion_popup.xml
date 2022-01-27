@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/popup_rounded"
+    android:orientation="vertical">
+    <TextView
+        android:tag="title_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color1"
+        android:text="Delete Suggestion?" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color5"
+            android:tag="yes_button"
+            android:text="Yes"
+            android:textColor="@color/color1"
+            android:layout_margin="10dp"
+            style="?android:attr/buttonBarButtonStyle"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color5"
+            android:tag="no_button"
+            android:text="No"
+            android:textColor="@color/color1"
+            android:layout_margin="10dp"
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+
+</LinearLayout>

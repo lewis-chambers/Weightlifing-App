@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExerciseFragment"
+    android:padding="10dp"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_rounded"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_title"
+            android:text="Title of exercise"
+            style="@style/TextView_h1"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/rep_range"
+            style="@style/TextView_h3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:tag="rep_range"
+            android:text="3 sets x 10-12 reps"
+            android:textAlignment="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:tag="last_comments_wrapper">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="header"
+                android:text="Comments"
+                android:textAlignment="center"
+                style="@style/TextView_h3"/>
+
+            <TextView
+                style="@style/EditText_active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="last_comments"
+                android:id="@+id/last_comments"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/popup_rounded"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_h4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:tag="set"
+                    android:text="SET"
+                    android:textAlignment="center" />
+
+                <TextView
+                    style="@style/TextView_h4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+                    android:tag="previous"
+                    android:text="PREVIOUS"
+                    android:textAlignment="center" />
+
+                <TextView
+                    style="@style/TextView_h4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:tag="weight"
+                    android:text="KG"
+                    android:textAlignment="center" />
+
+                <TextView
+                    style="@style/TextView_h4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:tag="reps"
+                    android:text="REPS"
+                    android:textAlignment="center" />
+                <TextView
+                    style="@style/TextView_h4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:tag="rpe"
+                    android:text="RPE"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/input_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:tag="this_comments_wrapper">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="header"
+                android:text="Comments"
+                android:textAlignment="center"
+                style="@style/TextView_h3" />
+
+            <EditText
+                style="@style/EditText_active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Enter comments for next time"
+                android:tag="this_comments"
+                android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:tag="button_bar"
+            android:gravity="center">
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/add_set"
+                android:tag="add_Set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ADD SET"
+                android:background="@drawable/button"
+                style="@style/button_text"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/rest_timer"
+                android:tag="rest_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Timer"
+                android:background="@drawable/button"
+                style="@style/button_text"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

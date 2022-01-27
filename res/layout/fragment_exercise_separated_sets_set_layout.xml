@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_rounded"
+    android:layout_gravity="center"
+    android:tag="set_layout"
+    android:id="@+id/set_layout">
+
+    <TextView
+        android:id="@+id/set_number"
+        style="@style/TextView_h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:tag="set_number"
+        android:text="Set number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/view"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/set_number"
+        app:layout_constraintEnd_toStartOf="@+id/options"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/set_number"
+        app:layout_constraintTop_toTopOf="@+id/set_number"
+        app:layout_constraintVertical_bias="0.5" />
+    <Button
+        android:id="@+id/options"
+        style="@style/button_text"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="0dp"
+        android:background="@drawable/button"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp"
+        android:tag="options"
+        android:text="..."
+        app:layout_constraintBottom_toBottomOf="@+id/set_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/set_number"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/performance_last_header"
+        style="@style/TextView_h3"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:tag="performance_last_header"
+        android:text="Performance last time"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_number" />
+    <TextView
+        android:id="@+id/last_data"
+        style="@style/TextView_h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:tag="last_data"
+        android:text="50kg x 12 @ RPE:7"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/performance_last_header" />
+
+    <TextView
+        android:id="@+id/performance_this_header"
+        style="@style/TextView_h3"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:tag="performance_this_header"
+        android:text="Performance this time"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_data" />
+    <TextView
+        android:id="@+id/this_data"
+        style="@style/TextView_h4"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:tag="this_data"
+        android:text="50kg x 12 @ RPE:7"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/performance_this_header" />
+
+    <TextView
+        android:id="@+id/weight_title"
+        style="@style/TextView_h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:tag="weight_title"
+        android:text="Weight"
+        app:layout_constraintEnd_toStartOf="@+id/reps_title"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/this_data" />
+
+        <EditText
+            android:id="@+id/weight_input"
+            style="@style/EditText_active"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="numberDecimal"
+            android:tag="weight_input"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/set_finished_button"
+            app:layout_constraintEnd_toEndOf="@+id/weight_title"
+            app:layout_constraintStart_toStartOf="@+id/weight_title"
+            app:layout_constraintTop_toBottomOf="@+id/weight_title"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/reps_title"
+            style="@style/TextView_h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="reps_title"
+            android:text="Reps"
+            app:layout_constraintBottom_toBottomOf="@+id/weight_title"
+            app:layout_constraintEnd_toStartOf="@+id/RPE_title"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/weight_title"
+            app:layout_constraintTop_toTopOf="@+id/weight_title" />
+
+        <EditText
+            android:id="@+id/reps_input"
+            style="@style/EditText_active"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:tag="reps_input"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:maxLength="3"
+            app:layout_constraintEnd_toEndOf="@+id/reps_title"
+            app:layout_constraintStart_toStartOf="@+id/reps_title"
+            app:layout_constraintTop_toBottomOf="@+id/reps_title" />
+
+        <TextView
+            android:id="@+id/RPE_title"
+            style="@style/TextView_h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="RPE_title"
+            android:text="RPE"
+            app:layout_constraintBottom_toBottomOf="@+id/weight_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/reps_title"
+            app:layout_constraintTop_toTopOf="@+id/weight_title" />
+
+        <EditText
+            android:id="@+id/RPE_input"
+            style="@style/EditText_active"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:tag="RPE_input"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:maxLength="2"
+            app:layout_constraintEnd_toEndOf="@+id/RPE_title"
+            app:layout_constraintStart_toStartOf="@+id/RPE_title"
+            app:layout_constraintTop_toBottomOf="@+id/RPE_title" />
+
+        <Button
+            android:id="@+id/set_finished_button"
+            style="@style/button_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@drawable/button"
+            android:tag="set_finished_button"
+            android:text="Set Finished"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

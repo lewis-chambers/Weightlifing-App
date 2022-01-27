@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+<LinearLayout
+    android:id="@+id/mainLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:tag="title_layout"
+        android:background="@drawable/popup_rounded"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="title_et"
+            android:text="Program Title"
+            style="@style/TextView_h1"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:tag="session_buttons"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/popup_rounded"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Select a session to start your workout:"
+            style="@style/TextView_h3"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:id="@+id/session_button_wrapper"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

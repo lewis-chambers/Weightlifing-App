@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Training Manager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="down"><![CDATA[<]]></string>
+    <string name="progress_will_be_lost">Are you sure you want to go back?\nProgress will be lost.</string>
+
+    <string-array name="exercise_strings">
+        <item>Squat</item>
+        <item>Front Squat</item>
+        <item>Hack Squat</item>
+        <item>Leg Press</item>
+        <item>Leg Extensions</item>
+
+        <item>Deadlift</item>
+        <item>Stiff Legged Deadlift</item>
+        <item>Romanian Deadlift</item>
+        <item>Leg Curl</item>
+        <item>Cable Pull Through</item>
+
+        <item>Seated Leg Curl</item>
+        <item>Standing Calf Raise</item>
+        <item>Seated Calf Raise</item>
+        <item>Leg Press Calf Raise</item>
+        <item>One Leg Calf Raise</item>
+
+        <item>Cable Crunches</item>
+        <item>Machine Crunches</item>
+        <item>Hyperextensions</item>
+
+        <item>Bench Press</item>
+        <item>Machine Chest Press</item>
+        <item>Wide Grip Bench Press</item>
+        <item>Close Grip Bench Press</item>
+        <item>Machine Flye</item>
+        <item>Dumbbell Flye</item>
+        <item>Dumbbell Bench Press</item>
+        <item>Decline Bench Press</item>
+        <item>Incline Bench Press</item>
+        <item>Dumbbell Incline Bench Press</item>
+        <item>Dumbbell Decline Bench Press</item>
+        <item>Dips</item>
+        <item>Assisted Dips</item>
+
+        <item>Barbell Row</item>
+        <item>Dumbbell Row</item>
+        <item>Dumbbell One Arm Row</item>
+        <item>Cable Row</item>
+        <item>Lat Pulldown</item>
+        <item>Wide Grip Lat Pulldown</item>
+        <item>Close Grip Lat Pulldown</item>
+        <item>V-Bar Lat Pulldown</item>
+        <item>Straight Arm Lat Pulldown</item>
+        <item>Rack Pull</item>
+        <item>Dumbbell Shrug</item>
+        <item>Barbell Shrug</item>
+        <item>Pull-Up</item>
+        <item>Assisted Pull-Up</item>
+
+        <item>Shoulder Press</item>
+        <item>Seated Shoulder Press</item>
+        <item>Dumbbell Shoulder Press</item>
+        <item>Seated Dumbbell Shoulder Press</item>
+        <item>Machine Shoulder Press</item>
+        <item>Arnold Press</item>
+        <item>Lateral Raise</item>
+        <item>Front Raise</item>
+        <item>Rear Delt Raise</item>
+        <item>Machine Rear Delt Flye</item>
+        <item>Upright Row</item>
+
+        <item>Barbell Curl</item>
+        <item>Dumbbell Curl</item>
+        <item>Seated Curl</item>
+        <item>Incline Curl</item>
+        <item>Cable Curl</item>
+        <item>Hammer Curl</item>
+        <item>Reverse Curl</item>
+        <item>Preacher Curl</item>
+        <item>Machine Curl</item>
+        <item>Spider Curl</item>
+
+        <item>Overhead Dumbbell Triceps Extension</item>
+        <item>Overhead Barbell Triceps Extension</item>
+        <item>Overhead One Arm Triceps Extension</item>
+        <item>Skullcrusher</item>
+        <item>Cable Triceps Pushdown</item>
+        <item>Overhead Cable Triceps Extension</item>
+        <item>Machine Dips</item>
+
+        <item>Wrist Curl</item>
+        <item>Reverse Wrist Curl</item>
+        <item>Farmers Walk</item>
+        <item>Static BarbellHold</item>
+    </string-array>
+</resources>
