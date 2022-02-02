@@ -8,13 +8,25 @@ This is a fairly simple Android app for tracking weightlifting progress at the g
 
 Currently the app is pretty much just a number tracker. It allows for the creation of exercise programs built up of individual sessions. In each session, a list of exercises is made, with the expected reps and sets. There is no limit on the number of programs, sessions, or exercises allowed.
 
+<p align=middle>
+<img src=Screenshots/program-creation.jpg alt="program creation screen" width=200>
+</p>
+
 ### Management of Programs
 
 On the programs screen, all created programs can be seen. Here they can be opened up to use, or they can be edited/renamed/deleted.
+<p align=middle>
+<img src=Screenshots/program-options.jpg alt="program management screen" width=200>
+</p>
 
 ### Workout Screen
 
 When a session in a program is opened up, all of the exercises are loaded in on a swipe-able window. If the session has been completed before, the weights, RPE, and reps will be loaded in from last time.  As each set is completed, the values can be filled in and on hitting enter the new inputs are closed in. When all exercises are completed, it allows the session to be submitted and a comment to be made.
+
+<p align=middle>
+	<img src=Screenshots/session-selection.jpg alt="session selection screen" width=200>
+	<img src=Screenshots/workout-screen.jpg alt="workout screen" width=200>
+</p>
 
 ## Future work
 
